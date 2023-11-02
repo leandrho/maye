@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;0,6..12,900;1,6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Mayéutica Consultorio Psicológico</title>
+</head>
+<body class="flex flex-col font-main-font" id="hero">
+        <nav class="bg-background-bro h-[10vh] px-[10%] w-full flex items-center justify-around max-md:gap-12 fixed  z-20 max-md:justify-between gap-6">
+            <a href="#" class="h-full flex items-center max-w-[220px]"><img src="./assets/logo-texto-transparent.png" alt="logo" class="h-[90%] min-w-[100px]"></a>
+            <input type="checkbox" id="menu" class="peer hidden">
+            <label for="menu" class="hidden max-md:bg-open-menu  max-md:p-5 max-md:bg-background-bro max-md:rounded-full max-md:w-8 max-md:h-7 max-md:bg-cover max-md:bg-center max-md:cursor-pointer peer-checked:bg-close-menu max-md:transition-all max-md:z-50
+            max-md:block">
+            </label>
+            <!--  bg-gradient-to-b from-white/70 to-black/70 -->
+            <div class="max-md:fixed max-md:inset-0  max-md:translate-x-full max-md:peer-checked:translate-x-0 max-md:transition-transform
+            flex-1  max-md:bg-black/70">
+                <ul class="max-md:absolute max-md:inset-x-0 max-md:top-24 max-md:p-12 max-md:bg-background-bro w-[90%] max-md:mx-auto max-md:rounded-md max-md:h-max max-md:text-center max-md:grid gap-6 max-md:font-bold 
+                    flex justify-end items-center text-lg max-md:text-xl max-md:justify-center text-nav-text-bro">
+                    <li><a href="#" onClick="hideMenu()">Inicio</a></li>
+                    <li><a href="#nosotros" onClick="hideMenu()">Nosotros</a></li>
+                    <li><a href="#servicios" onClick="hideMenu()">Servicios</a></li>
+                    <li><a href="#" onClick="hideMenu()">Blog<sup class="text-[0.6rem] text-background-bro bg-nav-text-bro rounded-full font-bold px-[4px]">pronto</sup></a></li>
+                    <li><a href="#contacto"onClick="hideMenu()">Contacto</a></li>
+                    <li class="max-md:block hidden">
+                        <div class=" flex p-2 gap-2 items-center justify-center">
+                            <a href="https://www.instagram.com/mayeutica.consult/#" target=”_blank”><img src="./assets/instagram.png" alt=""  class="w-8 h-8"/></a>
+                            <img src="./assets/facebook.png" alt="" class="w-8 h-8 "/>
+                            <a href="https://api.whatsapp.com/send?phone=5492664317948" target=”_blank”><img src="./assets/whatsapp.png" alt=""  class="w-8 h-8"/></a>
+                            
+                          </div>
+                    </li>
+                </ul>
+                
+            </div>     
+            <a href="#contacto" class="p-3 min-w-[120px] text-sm shadow-md rounded-3xl text-white font-bold bg-button-bro text-center max-lg:hidden">Perdir Cita</a>
+        </nav>
+        <header class="h-[90vh] mt-[10vh] flex items-center justify-center max-md:h-auto bg-wave bg-no-repeat bg-bottom mb-[-1px]" >
+            <!-- hero -->
+            <section class="py-4 g-container flex justify-around items-start gap-[6%]  max-md:gap-3 max-md:flex-col max-md:items-center ">
+                <div class="mt-[5%] max-md:mt-0 max-w-[37%] max-md:max-w-[75%] max-lg:max-w-[40%] text-nav-text-bro pt-8 max-lg:pt-0 max-md:pt-8">
+                    <h1 class="text-5xl max-md:pt-4 font-black">Mayéutica</h1>
+                    <h2 class="text-4xl font-black">Consultorio Psicológico</h2>
+                    <p class="pt-5 pb-7 text-lg text-black/80">Nuestro enfoque se basa en la exploración profunda de tus pensamientos y emociones, permitiéndote descubrir tu propia sabiduría y tomar decisiones más informadas para una vida mejor.</p>
+                    <a href="#contacto" class="min-w-[120px] block p-4 w-1/3 shadow-md rounded-3xl text-white font-bold bg-button-bro text-center max-md:hidden">Perdir Cita</a>
+                </div>
+                <div class="h-full max-md:flex max-md:justify-center">
+                    <img class="max-md:max-w-[85%]" src="./assets/hero-back7.png" alt="ruido de pensamientos convertidos en sonidos claros">
+                </div>
+                <div class="max-md:hidden fixed top-[11%] right-2 bg-background-bro shadow-md flex flex-col p-2 rounded-lg gap-2 items-center justify-center max-md:top-auto max-md:bottom-4 max-md:shadow-none max-md:bg-transparent">
+                    <a href="https://www.instagram.com/mayeutica.consult/#" target=”_blank”><img src="./assets/instagram.png" alt=""  class="w-8 h-8 max-md:w-6 max-md:h-6"/></a>
+                    <img src="./assets/facebook.png" alt="" class="w-8 h-8 max-md:w-6 max-md:h-6"/>
+                    <a href="https://api.whatsapp.com/send?phone=5492664317948" target=”_blank”><img src="./assets/whatsapp.png" alt=""  class="w-8 h-8"/></a>
+                  </div>
+            </section>
+    
+        </header>
+        <main class="flex flex-col">
+    
+            <!-- Cita -->
+            <section class="w-full py-10 bg-background-bro  flex items-start justify-start" >
+                <div class="w-[100%] py-16 flex flex-col items-center justify-center max-lg:w-[90%] bg-title-bro rounded-br-full rounded-tr-full">
+                    <cite class="w-2/3 font-serifs text-xl">
+                        "En nuestro consultorio, creemos en la magia de las preguntas bien formuladas, que actúan como faros que te guían a través del océano de tu mente hacia respuestas significativas y soluciones personales."
+                    </cite>
+                    <cite class="self-end pr-32">Chat GPT</cite>
+                </div>
+            </section>
+            <!-- Info Consult -->
+            <a class="anchor" id="nosotros"></a>
+            <section class="w-full bg-background-bro bt-rounded-bl-[15%]" id="" >
+                <div class="g-container flex items-center justify-center gap-8 py-16 max-lg:w-full ">
+                    <div class="max-w-[50%] max-lg:hidden">
+                        <img class="rounded-bl-[4rem] rounded-br-[10rem] rounded-tl-[10rem] rounded-tr-[5rem] min-h-[70vh]" src="./assets/consultorio.jpg" alt="">
+                    </div>
+                    <div class="max-w-[50%] px-12 pb-20 flex flex-col items-center  max-lg:max-w-[100%]">
+                        <img class="min-w-[50px] max-w-[100px]" src="./assets/logo.png" alt="">
+                        <h2 class="text-4xl font-black text-nav-text-bro">Mayéutica</h2>
+                        <p class="pt-4 text-black/80">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem ullam consectetur mollitia enim fugit provident temporibus distinctio! Veritatis ex quaerat ullam nemo impedit soluta et repellat architecto tempora consequuntur!
+                            Nemo perferendis, porro dicta nobis distinctio sint debitis, eligendi suscipit cumque obcaecati ipsa qui illum consequuntur excepturi. Non odit deleniti neque, iusto mollitia architecto, tenetur labore repudiandae et impedit deserunt?
+                            Modi unde corporis eveniet recusandae labore, a neque vel quis odit natus doloremque, quidem sunt architecto, magni nostrum minima expedita! Inventore, ad ut. Minima, sit nihil facere quod nisi ut.
+                            Nemo doloremque ipsam similique odit autem, optio, eaque enim alias maxime, dolorum eveniet officiis laboriosam aspernatur repellat repellendus quidem. Facilis ut a quas aspernatur quos sint error magni asperiores veritatis.
+                            Sapiente itaque eaque voluptatum. Ratione consequuntur amet in sint dolorum inventore autem. Aspernatur, voluptatem cumque officia, vitae maiores voluptatibus quibusdam deserunt quis ea porro, voluptate assumenda eaque repellendus recusandae nobis.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Nos -->
+            <section class="w-full py-4 bg-background-bro">
+                <!-- <div class="flex flex-col items-center">
+                    <img class="w-20" src="./assets/logo.png" alt="">
+                    <h1 class="text-3xl font-semibold">Nosotros</h1>
+                </div>
+                 -->
+                <div class="w-full  flex  justify-between items-center max-sm:flex-col max-sm:gap-0  ">
+                    <div class="w-[49.5%] inline-block bg-title-bro p-4  rounded-br-[5rem] rounded-tr-[5rem] max-sm:rounded-none max-md:w-full ">
+                        <div class="flex flex-col items-center justify-center pr-8 max-md:pr-0">
+                            <div class="">
+                                <img class="w-48 h-48 object-cover rounded-full" src="./assets/face1.jpg" alt="">
+                            </div>
+                            <h3 class="text-lg font-bold text-black/80">Lic. Valeria E. Sanchez</h3>
+                            <p class="font-bold text-black/80">M.P 1000</p>
+                        </div>
+                    </div>
+                    <div class="w-[49.5%] inline-block bg-title-bro p-4 rounded-bl-[5rem] rounded-tl-[5rem] max-sm:rounded-none max-md:w-full">
+                        <div class="flex flex-col items-center justify-center pl-8 max-md:pl-0">
+                            <div class="">
+                                <img class="w-48 h-48 object-cover rounded-full" src="./assets/face2.jpg" alt="">
+                            </div>
+                            <h3 class="text-lg font-bold text-black/80">Lic. Valeria E. Sanchez</h3>
+                            <p class="font-bold text-black/80">M.P 1000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Servic -->
+            <a class="anchor" id="servicios"></a>
+            <section class="w-full bg-white bg-wave2 bg-no-repeat" >
+                <div class="g-container flex flex-col items-center justify-center gap-8 py-16 text-black/80" id="">
+                    <div class="flex flex-col items-center">
+                        <!-- <img class="w-7 h-7" src="./assets/wing.png" alt=""> -->
+                        <h1 class="text-4xl font-black text-nav-text-bro">Servicios</h1>
+                    </div>
+                    <div class="grid grid-cols-3 place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
+                        <div class="bg-background-bro rounded-lg shadow-md  h-[50vh] pb-2 overflow-hidden max-sm:w-[85%]">
+                            <img class="w-full h-[60%] object-cover rounded-t-lg" src="./assets/servicio-individual-image.jpg" alt="">
+                            <div class="p-4 ">
+                                <h2 class="text-lg font-bold">Individual</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt dolor? Ex veniam, maxime praesentium ea a magni</p>
+
+                            </div>
+                        </div>
+                        <div class="bg-background-bro rounded-lg shadow-md h-[50vh] pb-2 overflow-hidden max-sm:w-[85%]">
+                            <img class="w-full h-[60%] object-cover rounded-t-lg" src="./assets/servicio-ninios-image.jpg" alt="">
+                            <div class="p-4 ">
+                                <h2 class="text-lg font-bold">Niños</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt dolor? Ex veniam, maxime praesentium ea a magni</p>
+
+                            </div>
+                        </div>
+                        <div class="bg-background-bro rounded-lg shadow-md h-[50vh] pb-2 overflow-hidden max-sm:w-[85%]">
+                            <img class="w-full h-[60%] object-cover rounded-t-lg" src="./assets/servicio-adolecentes-image.jpg" alt="">
+                            <div class="p-4 ">
+                                <h2 class="text-lg font-bold">Adolecentes</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt dolor? Ex veniam, maxime praesentium ea a magni</p>
+                            </div>
+                        </div>
+                        <div class="bg-background-bro rounded-lg shadow-md h-[50vh] pb-2 overflow-hidden max-sm:w-[85%]">
+                            <img class="w-full h-[60%] object-cover rounded-t-lg" src="./assets/servicio-perinatal-image.jpg" alt="">
+                            <div class="p-4 ">
+                                <h2 class="text-lg font-bold">Perinatal</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt dolor? Ex veniam, maxime praesentium ea a magni</p>
+
+                            </div>
+                        </div>
+                        <div class="bg-background-bro rounded-lg shadow-md h-[50vh] pb-2 overflow-hidden max-sm:w-[85%]">
+                            <img class="w-full h-[60%] object-cover rounded-t-lg" src="./assets/servicio-pareja-image.jpg" alt="">
+                            <div class="p-4 ">
+                                <h2 class="text-lg font-bold">Parejas</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt dolor? Ex veniam, maxime praesentium ea a magni</p>
+
+                            </div>
+                        </div>
+                        <div class="bg-background-bro rounded-lg shadow-md h-[50vh] pb-2 overflow-hidden max-sm:w-[85%]">
+                            <img class="w-full h-[60%] object-cover rounded-t-lg" src="./assets/servicio-grupal-image.jpg" alt="">
+                            <div class="p-4 ">
+                                <h2 class="text-lg font-bold">Grupal</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt dolor? Ex veniam, maxime praesentium ea a magni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact -->
+            <a class="anchor" id="contacto"></a>
+            <section class="w-full bg-wave bg-no-repeat bg-bottom  py-12" id="">
+                    <h1 class="text-nav-text-bro text-4xl font-black text-center pb-12">Habla con Nosotros</h1>
+                    <div class="w-full flex items-center justify-evenly py-1 max-md:flex-col max-md:gap-6">
+                        <div class="text-base max-md:order-1 max-sm:self-start max-sm:pl-8">
+                            <h1 class="text-xl font-bold">Contacto</h1>
+                            <div class="max-md:flex max-md:gap-4 max-sm:flex-col">
+                                <div class="">
+                                    <p class="font-bold">Lic. Valeria E. Sanchez</p>
+                                    <p class="w-8 h-8 inline"><img class="inline" src="./assets/phone.svg" alt=""> 2664101010</p>
+                                    <p></p>
+                                    <p class="w-8 h-8 inline"><img class="inline-block" src="./assets/mail.svg" alt=""> lic.valeriasanchez@gmail.com</p>
+                                </div>
+                                <div class="pt-8 max-md:pt-0">
+                                    <p class="font-bold">Lic. Valeria E. Sanchez</p>
+                                    <p class="w-8 h-8 inline"><img class="inline" src="./assets/phone.svg" alt=""> 2664101010</p>
+                                    <p></p>
+                                    <p class="w-8 h-8 inline"><img class="inline-block" src="./assets/mail.svg" alt=""> lic.valeriasanchez@gmail.com</p>
+                                </div>
+                            </div>
+                            <h1 class="pt-8 text-xl max-sm:text-lg font-bold">Dirección</h1>
+                            <div>
+                                <p class="w-8 h-8 inline"><img class="inline" src="./assets/map-marker.svg" alt=""> Belgrano 860, 1<sup>er</sup> Piso</p>
+                                <p></p>
+                            </div>
+                            <h1 class="pt-8 text-xl max-sm:text-lg font-bold">Horario de Atención</h1>
+                            <div>
+                                <p class="w-8 h-8 inline"><img class="inline" src="./assets/calendar.svg" alt=""> Lunes a Viernes de 8.00 a 21.00 hs</p>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class=" max-w-[600px] w-[35%] bg-nav-text-bro  p-8 rounded-bl-[9rem] rounded-tl-[5rem] rounded-br-[5rem] rounded-tr-[9rem] overflow-hidden  max-md:w-2/3 max-sm:w-[90%]">
+                            <form action="#" class="flex flex-col gap-1 text-base">
+                                <h1 class="text-xl font-bold text-black ">Agenda una Cita / Consultas</h1>
+                                <label for="name" class="font-bold text-sm text-black ">Nombre y Apellido</label>
+                                <input type="text" name="name" id="name" class="px-2 text-base rounded-md outline-none" disabled/>
+                
+                                <label for="email" class="font-bold text-sm text-black ">Email</label>
+                                <input type="email" name="email" id="email"  class="px-2 text-base rounded-md outline-none" disabled/>
+                
+                                <label for="phone" class="font-bold text-sm text-black ">Telefono</label>
+                                <input type="text" name="phone" id="phone" class="px-2 text-base rounded-md outline-none" disabled/>
+                
+                                <label for="consulta" class="font-bold text-sm text-black ">Mensaje</label>
+                                <textarea name="consulta" id="consulta" cols="30" rows="10"  class="px-2 text-base rounded-md outline-none resize-y" disabled></textarea>
+                                <button disabled type='submit' class='mt-8 bg-button-bro min-w-[150px] max-w-[250px] p-4 rounded-full text-white font-bold self-center'>Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+            </section>
+            <footer class="h-[35vh] bg-background-bro shadow-lg" >
+                   
+                        <div class="w-full h-[90%] flex items-center justify-evenly">
+                            <div class="w-[10%] min-w-[170px] max-w-[370px]">
+                                <img class="w-full h-full" src="./assets/logo-texto-transparent-brown.png" alt="" />
+                            </div>
+                            <div class="text-black/80">
+                                <h2 class="text-lg font-bold">Redes sociales</h2>
+                                <div class="flex gap-4">
+                                    <i class=""><img class="h-14 w-14" src="./assets/baseline-facebook.svg" alt=""></i>
+                                    <i class=""><img class="h-14 w-14" src="./assets/instagram.svg" alt=""></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class=" text-sm text-gray-900 text-center">© Mayéutica - Consultorio Psicológico - 2023</p>
+            </footer>
+        </main>
+        <script src="./js/script.js"></script>
+</body>
+</html>
+
+<!-- 
+    background #f4f0ee
+    button #69727d text white
+    nav text #928781
+    texto grande titulo #cab8a2
+ -->

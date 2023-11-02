@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .g-container{
+        @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl ;
+    }
+    .anchor{
+        display: block;
+        position: relative;
+        top: -8vh;
+        visibility: hidden;
+    }
+}
